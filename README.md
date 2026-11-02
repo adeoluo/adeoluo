@@ -4,12 +4,12 @@
 
 ### AI and Machine Learning Engineer
 
-**I build AI systems from scratch, in pure Python, and prove they work.**
+**I build AI and machine learning systems from scratch in pure Python, and validate them against established libraries.**
 
 Transformers and autodiff, vector search, RLHF and alignment, agents, retrieval, evaluation,
 and the infrastructure around them. Every project is implemented with **zero third-party
 runtime dependencies**, runs **deterministically and offline**, ships with **green CI** and real
-benchmarks, and is **validated against the libraries the industry actually uses**.
+benchmarks, and is **checked against widely used reference libraries** where it matters.
 
 <br/>
 
@@ -21,7 +21,6 @@ benchmarks, and is **validated against the libraries the industry actually uses*
 ![Followers](https://img.shields.io/github/followers/adeoluo?style=flat-square&label=followers&color=1f6feb)
 ![Repositories](https://img.shields.io/badge/public%20repos-31-1f6feb?style=flat-square)
 ![Flagships](https://img.shields.io/badge/flagship%20projects-10-8957e5?style=flat-square)
-![Scratch](https://img.shields.io/badge/from%20scratch-everything-2ea44f?style=flat-square)
 
 </div>
 
@@ -29,17 +28,16 @@ benchmarks, and is **validated against the libraries the industry actually uses*
 
 ## The portfolio at a glance
 
-Thirty-one focused projects spanning the full AI engineering stack, built from first principles.
+Thirty-one focused projects spanning the AI engineering stack, each implemented from scratch.
 The ten flagships below each pair a from-scratch implementation with **independent, reproducible
 evidence** that it is correct and effective. The rest cover the breadth: classical ML and NLP,
 open-source libraries, retrieval and RAG, agents, evaluation and safety, and language-model
 products.
 
-> **What sets this apart:** most portfolios show that something runs. These show, with numbers,
-> that the maths is right (gradients checked against PyTorch to 1e-9), that the algorithm is
-> competitive (matches hnswlib's recall), and that the honest result is reported even when it is
-> not a win (a learned retriever that ties, rather than beats, strong lexical baselines on a small
-> corpus).
+**Approach.** Each flagship reports how it was checked: gradients compared with PyTorch to within
+1e-9, HNSW recall compared with hnswlib at matched parameters, statistics compared with scipy.
+Results that are not wins are reported as they are, for example a learned dense retriever that
+ties, rather than beats, lexical baselines on a small corpus.
 
 ---
 
@@ -143,9 +141,9 @@ flowchart LR
 
 ---
 
-## Flagship projects, with the receipts
+## Flagship projects
 
-| Project | What it is | The proof |
+| Project | What it is | Validation and results |
 |---|---|---|
 | [transformer-from-scratch](https://github.com/adeoluo/transformer-from-scratch) | A decoder-only transformer and a reverse-mode autodiff engine | Gradients match **PyTorch to < 1e-9**; learns real text to **3.64 bits/char** vs a 4.30 baseline; checkpointing |
 | [evaluation-harness](https://github.com/adeoluo/evaluation-harness) | A model and agent evaluation framework | Statistics cross-checked against **scipy to machine precision**: bootstrap CIs, McNemar, Cohen's d |
