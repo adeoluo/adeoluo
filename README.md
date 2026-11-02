@@ -123,19 +123,25 @@ Each pairs a from-scratch implementation with independent validation and honest,
 
 ### What every repository shares
 
+<p align="center">
+  <img src="https://img.shields.io/badge/language-pure%20Python-3776AB" alt="pure Python" />
+  <img src="https://img.shields.io/badge/runtime%20dependencies-zero-success" alt="zero runtime dependencies" />
+  <img src="https://img.shields.io/badge/types-mypy%20--strict-2A6DB0" alt="mypy strict" />
+  <img src="https://img.shields.io/badge/lint%20%26%20format-ruff-FCC21B" alt="ruff" />
+  <img src="https://img.shields.io/badge/CI-green-success" alt="green CI" />
+  <img src="https://img.shields.io/badge/runs-deterministic%20%26%20offline-blueviolet" alt="deterministic and offline" />
+</p>
+
 <samp>
-pure Python, zero third-party runtime dependencies &nbsp;·&nbsp; deterministic & offline &nbsp;·&nbsp; green CI (ruff, mypy&nbsp;--strict, pytest) &nbsp;·&nbsp; typed, documented, benchmarked &nbsp;·&nbsp; architecture notes & ADRs &nbsp;·&nbsp; independent validation against established libraries where it counts
+Every project is <b>pure Python with zero third-party runtime dependencies</b>, deterministic and
+offline, with green CI (ruff, mypy&nbsp;--strict, pytest), full typing, documentation, benchmarks,
+architecture notes and ADRs, and independent validation against established libraries where it
+counts (PyTorch, scipy, hnswlib/FAISS, jsonschema).
 </samp>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=adeoluo&show_icons=true&hide_border=true&theme=default&count_private=true" alt="GitHub stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=adeoluo&layout=compact&hide_border=true&langs_count=8&theme=default" alt="Top languages" height="165" />
+  <img src="https://img.shields.io/github/followers/adeoluo?label=Followers&style=social" alt="followers" />
+  <img src="https://img.shields.io/badge/public%20repositories-31-informational" alt="public repositories" />
+  <img src="https://img.shields.io/badge/flagship%20projects-10-blue" alt="flagship projects" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=adeoluo&hide_border=true" alt="Streak" height="165" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=adeoluo&hide_border=true&area=true" alt="Contribution graph" width="90%" />
-</p>
