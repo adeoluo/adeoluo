@@ -62,13 +62,13 @@ Pick what you want to see. Colors group projects by the stage of the stack they 
 %%{init: {"flowchart": {"wrappingWidth": 320}}}%%
 flowchart TD
   n_root(["What do you want to explore?"])
-  n_root --> n_model["Modeling and training<br/><b>transformer-from-scratch</b><br/>cnn-from-scratch<br/>neural-word-embeddings<br/>bpe-tokenizer-library<br/>corpus-dedup-library<br/>crf-sequence-labeler<br/>dependency-parser<br/>statistical-translation<br/>topic-model-lda"]
-  n_root --> n_retr["Retrieval and search<br/><b>ann-vector-search-library</b><br/><b>hybrid-rag</b><br/>graphrag<br/>agentic-rag<br/>grounded-copilot"]
-  n_root --> n_align["Alignment and post-training<br/><b>rlhf-reward-model</b><br/>preference-optimization<br/>self-improvement-loop<br/>prompt-optimizer"]
-  n_root --> n_serve["Serving and reliability<br/><b>llm-gateway</b><br/><b>constrained-generation-library</b>"]
-  n_root --> n_agent["Agents<br/><b>react-agent</b><br/><b>multi-agent-orchestrator</b><br/><b>agent-platform</b><br/>agent-memory<br/>nl-sql-analyst<br/>ai-code-reviewer<br/>agent-sandbox"]
-  n_root --> n_trust["Evaluation and trust<br/><b>evaluation-harness</b><br/><b>training-provenance</b><br/>llm-observability<br/>factuality-auditor<br/>red-teaming<br/>llm-eval-action"]
-  n_root --> n_sys["Systems and tooling<br/><b>vectordb-go</b><br/>mcp-ml-tools<br/>sweep-orchestrator<br/>hyperparameter-optimizer<br/>profile-forge<br/>homebrew-tap"]
+  n_root --> n_model["<u>Modeling and training</u><br/><b>transformer-from-scratch</b><br/>cnn-from-scratch<br/>neural-word-embeddings<br/>bpe-tokenizer-library<br/>corpus-dedup-library<br/>crf-sequence-labeler<br/>dependency-parser<br/>statistical-translation<br/>topic-model-lda"]
+  n_root --> n_retr["<u>Retrieval and search</u><br/><b>ann-vector-search-library</b><br/><b>hybrid-rag</b><br/>graphrag<br/>agentic-rag<br/>grounded-copilot"]
+  n_root --> n_align["<u>Alignment and post-training</u><br/><b>rlhf-reward-model</b><br/>preference-optimization<br/>self-improvement-loop<br/>prompt-optimizer"]
+  n_root --> n_serve["<u>Serving and reliability</u><br/><b>llm-gateway</b><br/><b>constrained-generation-library</b>"]
+  n_root --> n_agent["<u>Agents</u><br/><b>react-agent</b><br/><b>multi-agent-orchestrator</b><br/><b>agent-platform</b><br/>agent-memory<br/>nl-sql-analyst<br/>ai-code-reviewer<br/>agent-sandbox"]
+  n_root --> n_trust["<u>Evaluation and trust</u><br/><b>evaluation-harness</b><br/><b>training-provenance</b><br/>llm-observability<br/>factuality-auditor<br/>red-teaming<br/>llm-eval-action"]
+  n_root --> n_sys["<u>Systems and tooling</u><br/><b>vectordb-go</b><br/>mcp-ml-tools<br/>sweep-orchestrator<br/>hyperparameter-optimizer<br/>profile-forge<br/>homebrew-tap"]
 
   classDef c_root fill:#1f2937,stroke:#111827,color:#f9fafb;
   classDef c_model fill:#dbeafe,stroke:#1d4ed8,color:#0b1b3a;
@@ -279,7 +279,7 @@ Bytes of code per language, summed across my public repositories with the GitHub
 | Python | 2.4 MiB | 68.3% | 35 |
 | Rust | 365.3 KiB | 10.0% | 4 |
 | TypeScript | 334.4 KiB | 9.1% | 4 |
-| Go | 277.5 KiB | 7.6% | 3 |
+| Go | 277.6 KiB | 7.6% | 3 |
 | Shell | 73.7 KiB | 2.0% | 20 |
 | Other | 111.6 KiB | 3.0% |  |
 
@@ -289,7 +289,7 @@ pie
   "Python" : 2563884
   "Rust" : 374068
   "TypeScript" : 342399
-  "Go" : 284199
+  "Go" : 284304
   "Shell" : 75482
   "Other" : 114296
 ```
@@ -318,7 +318,7 @@ Repositories with a tagged release. Badges link to the release page.
 | [llm-observability](https://github.com/adeoluo/llm-observability) | [![llm-observability v0.2.0](https://img.shields.io/badge/release-v0.2.0-b91c1c?style=flat-square)](https://github.com/adeoluo/llm-observability/releases/tag/v0.2.0) | Python |
 | [mcp-ml-tools](https://github.com/adeoluo/mcp-ml-tools) | [![mcp-ml-tools v0.1.0](https://img.shields.io/badge/release-v0.1.0-0f766e?style=flat-square)](https://github.com/adeoluo/mcp-ml-tools/releases/tag/v0.1.0) | TypeScript |
 | [multi-agent-orchestrator](https://github.com/adeoluo/multi-agent-orchestrator) | [![multi-agent-orchestrator v0.1.0](https://img.shields.io/badge/release-v0.1.0-a21caf?style=flat-square)](https://github.com/adeoluo/multi-agent-orchestrator/releases/tag/v0.1.0) | Python |
-| [profile-forge](https://github.com/adeoluo/profile-forge) | [![profile-forge v0.2.1](https://img.shields.io/badge/release-v0.2.1-0f766e?style=flat-square)](https://github.com/adeoluo/profile-forge/releases/tag/v0.2.1) | Go |
+| [profile-forge](https://github.com/adeoluo/profile-forge) | [![profile-forge v0.3.0](https://img.shields.io/badge/release-v0.3.0-0f766e?style=flat-square)](https://github.com/adeoluo/profile-forge/releases/tag/v0.3.0) | Go |
 | [react-agent](https://github.com/adeoluo/react-agent) | [![react-agent v0.1.0](https://img.shields.io/badge/release-v0.1.0-a21caf?style=flat-square)](https://github.com/adeoluo/react-agent/releases/tag/v0.1.0) | Python |
 | [rlhf-reward-model](https://github.com/adeoluo/rlhf-reward-model) | [![rlhf-reward-model v0.1.0](https://img.shields.io/badge/release-v0.1.0-6d28d9?style=flat-square)](https://github.com/adeoluo/rlhf-reward-model/releases/tag/v0.1.0) | Python |
 | [training-provenance](https://github.com/adeoluo/training-provenance) | [![training-provenance v0.1.0](https://img.shields.io/badge/release-v0.1.0-b91c1c?style=flat-square)](https://github.com/adeoluo/training-provenance/releases/tag/v0.1.0) | Python |
