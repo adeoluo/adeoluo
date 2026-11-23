@@ -19,12 +19,19 @@ I research adversarial telemetry at **F5 Labs** and build machine learning infra
 
 ---
 
-## Published Threat Research & External Press
+## Published Threat Research
 
 - **F5 Labs Threat Research Report (Sole Author, Nov 18, 2026):** [*"Automation leading up to Black Friday"*](https://www.f5.com/labs/articles/2026-black-friday-bot-report) ([PDF](https://cdn.sanity.io/files/k6fem79d/translations-production/1d1028afb94e20d907a0b98ef084535e84fc9cd5.pdf)) - multi-season econometric and behavioral analysis (`2023-2025`) across retail Web and Mobile API traffic, decomposing headline bot-rate jumps (`17.4% -> 18.5% -> 28.6%`) into cohort churn vs same-store attacker surges, holiday human-denominator dilution, interstitial CAPTCHA censoring (`23.9% - 79.5%`), and channel-level displacement risk.
-- **F5 Executive CISO Blog (Nov 19, 2026):** Featured as the empirical foundation of North America Field CISO Sean Murphy's column, [*"The Black Friday automation trend everyone gets wrong"*](https://www.f5.com/company/blog/the-black-friday-automation-trend-everyone-gets-wrong).
-- **Dark Reading Coverage (Nov 19, 2026):** Cited by Senior News Writer Alexander Culafi in [*"Why Holiday Security Can't Wait for Black Friday"*](https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday).
 - **Companion Research Codebase:** [**`bot-traffic-econometrics`**](https://github.com/adeoluo/bot-traffic-econometrics) (`Rust PyO3 + Rayon` · `Python`) - open-source implementation of the 4-way Melitz-Polanec/Kitagawa unbalanced-panel decomposition, Shapley surge dilution, sharp Manski bounds & multi-flow EM under challenge censoring, `O(N * D)` Ozaki multivariate Hawkes MLE, and Stackelberg Web-vs-Mobile-API displacement equilibria (`< 1e-10` parity vs `SciPy`, `17x - 134x` Rust speedups).
+
+## Featured In
+
+Industry coverage and executive commentary referencing my F5 Labs report:
+
+| Outlet | Article | Author | Date |
+| --- | --- | --- | --- |
+| **Dark Reading** | [*"Why Holiday Security Can't Wait for Black Friday"*](https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday) | Alexander Culafi, Senior News Writer | Nov 19, 2026 |
+| **F5 Executive Blog** | [*"The Black Friday automation trend everyone gets wrong"*](https://www.f5.com/company/blog/the-black-friday-automation-trend-everyone-gets-wrong) | Sean Murphy, Field CISO (North America), F5 | Nov 19, 2026 |
 
 ---
 
