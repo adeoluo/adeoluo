@@ -1,0 +1,4 @@
+assets/** linguist-vendored -linguist-detectable
+*.mmd linguist-vendored -linguist-detectable
+*.svg linguist-vendored -linguist-detectable
+README.md -linguist-documentation linguist-detectable

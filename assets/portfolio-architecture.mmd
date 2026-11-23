@@ -1,0 +1,45 @@
+---
+title: End-to-End AI Infrastructure & Security Stack (20 Repositories)
+---
+flowchart LR
+    classDef core     fill:#6366F1,stroke:#1E293B,color:#ffffff,stroke-width:1px;
+    classDef data     fill:#10B981,stroke:#1E293B,color:#ffffff,stroke-width:1px;
+    classDef danger   fill:#EF4444,stroke:#1E293B,color:#ffffff,stroke-width:1px;
+    classDef control  fill:#0EA5E9,stroke:#1E293B,color:#ffffff,stroke-width:1px;
+    classDef edge     fill:#F59E0B,stroke:#1E293B,color:#1E293B,stroke-width:1px;
+
+    subgraph S1["1. Data & Post-Training"]
+        direction TB
+        D1["<b>Pretraining Corpora</b><br/>corpus-dedup-library<br/>bpe-tokenizer-library"]:::core
+        D2["<b>Model Internals</b><br/>transformer-from-scratch"]:::core
+        D3["<b>Alignment & Prompts</b><br/>rlhf-reward-model<br/>prompt-optimizer"]:::core
+        D1 ~~~ D2 ~~~ D3
+    end
+
+    subgraph S2["2. Compilers, Search & Ranking"]
+        direction TB
+        R1["<b>Graph Compiler</b><br/>ml-graph-compiler (C/NEON/MLIR)"]:::data
+        R2["<b>Vector & Hybrid Retrieval</b><br/>vectordb-go · hybrid-rag<br/>ann-vector-search-library"]:::data
+        R3["<b>Ranking & Auctions</b><br/>lambdamart-ranking-engine<br/>ad-auction-lab"]:::data
+        R1 ~~~ R2 ~~~ R3
+    end
+
+    subgraph S3["3. Security & Sandboxing"]
+        direction TB
+        X1["<b>Artifact & MCP Scanners</b><br/>model-supply-chain-scanner<br/>mcp-security-scanner"]:::danger
+        X2["<b>Injection & App Defense</b><br/>prompt-injection-detector<br/>llm-vuln-scanner"]:::danger
+        X3["<b>Execution Isolation</b><br/>agent-sandbox (Rust policy engine)"]:::danger
+        X1 ~~~ X2 ~~~ X3
+    end
+
+    subgraph S4["4. Serving, Agents & Telemetry"]
+        direction TB
+        P1["<b>Safety Gateway</b><br/>llm-gateway (Python + Go proxy)"]:::edge
+        P2["<b>Multi-Tenant Runtime</b><br/>agent-platform (durable SQLite jobs)"]:::edge
+        P3["<b>Eval & Observability</b><br/>evaluation-harness<br/>llm-observability"]:::control
+        P1 ~~~ P2 ~~~ P3
+    end
+
+    S1 -->|weights & prompts| S2
+    S2 -->|compiled & indexed| S3
+    S3 -->|hardened & gated| S4
