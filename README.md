@@ -16,7 +16,7 @@ Pursuing Master of Data Science (Focus: Artificial Intelligence & Machine Learni
 
 ---
 
-I publish threat research on bots and automated attacks: five F5 Labs reports and articles since 2023, listed below. My latest report was picked up by F5's North America Field CISO and covered by *Dark Reading*.
+I publish threat research on bots and automated attacks: five F5 Labs reports and articles since 2023, listed below. My latest report was picked up by F5's North America Field CISO and covered by *Dark Reading*, a top-tier cybersecurity news publication.
 
 The repositories below are a separate body of work: ML infrastructure, AI security scanners, ranking engines and agent services that I built by directing AI coding agents. What I contribute is the choice of problem, the baselines to beat, and the insistence that every result be checked against an established reference (**PyTorch, ONNX Runtime, SciPy, FAISS, hnswlib, LightGBM, XGBoost, scikit-learn, tiktoken, Semgrep, picklescan, fickling, garak**) and reported with its losses. None of it has outside users yet, and each repository states its [evidence level](#evidence-levels).
 
