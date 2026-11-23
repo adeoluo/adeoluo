@@ -4,7 +4,7 @@
 
 **AI Systems, Security & ML Engineer Who Directs Multi-Agent Workflows**
 
-Data Scientist, Threat Analytics and Reporting @ **F5**<br/>
+Cyber Security Data Scientist by Day - AI Engineer & Researcher by Night<br/>
 Bachelor of Computer Science with Distinction (Certificate of Specialization in Data Science) @ **Dalhousie University**<br/>
 Pursuing Master of Data Science (Focus: Artificial Intelligence & Machine Learning) @ **Johns Hopkins University**
 
@@ -16,7 +16,7 @@ Pursuing Master of Data Science (Focus: Artificial Intelligence & Machine Learni
 
 ---
 
-I am a data scientist on F5's Threat Analytics and Reporting team, where I have published threat research on bots and automated attacks since 2023. My latest report was picked up by F5's North America Field CISO and covered by *Dark Reading*.
+I publish threat research on bots and automated attacks: five F5 Labs reports and articles since 2023, listed below. My latest report was picked up by F5's North America Field CISO and covered by *Dark Reading*.
 
 The repositories below are a separate body of work: ML infrastructure, AI security scanners, ranking engines and agent services that I built by directing AI coding agents. What I contribute is the choice of problem, the baselines to beat, and the insistence that every result be checked against an established reference (**PyTorch, ONNX Runtime, SciPy, FAISS, hnswlib, LightGBM, XGBoost, scikit-learn, tiktoken, Semgrep, picklescan, fickling, garak**) and reported with its losses. None of it has outside users yet, and each repository states its [evidence level](#evidence-levels).
 
@@ -38,7 +38,7 @@ The 2026 report covers three Black Friday seasons of retail traffic. Its two cen
 
 ### Industry Coverage of the 2026 Report
 
-Both articles discuss the F5 Labs study and link to it. They cite the report, which carries my byline, rather than naming me.
+Both articles discuss my F5 Labs published research report and link to it.
 
 | Outlet | Article | Author | Date |
 | --- | --- | --- | --- |
