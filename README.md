@@ -7,7 +7,7 @@
 Bachelor of Computer Science with Distinction (Certificate of Specialization in Data Science) @ **Dalhousie University**<br/>
 Pursuing Master of Data Science (Focus: Artificial Intelligence & Machine Learning) @ **Johns Hopkins University**
 
-[**LinkedIn**](https://www.linkedin.com/in/adeolu-ogunnoiki) · [**F5 Labs Author Profile**](https://www.f5.com/labs/authors/adeolu-ogunnoiki) · [**adeoluo@hotmail.com**](mailto:adeoluo@hotmail.com)
+[**LinkedIn**](https://www.linkedin.com/in/adeolu-ogunnoiki) · [**F5 Labs Author Profile**](https://www.f5.com/labs/authors/adeolu-ogunnoiki)
 
 `Python` · `Rust` · `Go` · `TypeScript`
 
