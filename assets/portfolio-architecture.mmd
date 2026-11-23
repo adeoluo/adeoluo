@@ -1,5 +1,5 @@
 ---
-title: End-to-End AI Infrastructure & Security Stack (20 Repositories)
+title: End-to-End AI Infrastructure, Security & Threat Econometrics Stack (21 Repositories)
 ---
 flowchart LR
     classDef core     fill:#6366F1,stroke:#1E293B,color:#ffffff,stroke-width:1px;
@@ -24,10 +24,10 @@ flowchart LR
         R1 ~~~ R2 ~~~ R3
     end
 
-    subgraph S3["3. Security & Sandboxing"]
+    subgraph S3["3. Security, Sandboxing & Threat Econometrics"]
         direction TB
         X1["<b>Artifact & MCP Scanners</b><br/>model-supply-chain-scanner<br/>mcp-security-scanner"]:::danger
-        X2["<b>Injection & App Defense</b><br/>prompt-injection-detector<br/>llm-vuln-scanner"]:::danger
+        X2["<b>Threat Econometrics & Defense</b><br/>bot-traffic-econometrics<br/>prompt-injection-detector · llm-vuln-scanner"]:::danger
         X3["<b>Execution Isolation</b><br/>agent-sandbox (Rust policy engine)"]:::danger
         X1 ~~~ X2 ~~~ X3
     end
