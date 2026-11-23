@@ -4,7 +4,6 @@
 
 **AI Systems, Security & ML Engineer Who Directs Multi-Agent Workflows**
 
-Cyber Security Data Scientist by Day - AI Engineer & Researcher by Night<br/>
 Bachelor of Computer Science with Distinction (Certificate of Specialization in Data Science) @ **Dalhousie University**<br/>
 Pursuing Master of Data Science (Focus: Artificial Intelligence & Machine Learning) @ **Johns Hopkins University**
 
@@ -16,9 +15,9 @@ Pursuing Master of Data Science (Focus: Artificial Intelligence & Machine Learni
 
 ---
 
-I publish threat research on bots and automated attacks: five F5 Labs reports and articles since 2023, listed below. My latest report was picked up by F5's North America Field CISO and covered by *Dark Reading*, a top-tier cybersecurity news publication.
+I design, build and maintain software across multiple languages (Python, Rust, Go and TypeScript) by directing multiple AI agents and agent workflows, and I publish threat research on bots and automated attacks: five F5 Labs reports and articles since 2023, listed below. My latest report was picked up by F5's North America Field CISO and covered by *Dark Reading*, a top-tier cybersecurity news publication.
 
-The repositories below are a separate body of work: ML infrastructure, AI security scanners, ranking engines and agent services that I built by directing AI coding agents. My part is choosing the problem, choosing the well-known tool to beat, and insisting that every result be checked against that tool (**PyTorch, ONNX Runtime, SciPy, FAISS, hnswlib, LightGBM, XGBoost, scikit-learn, tiktoken, Semgrep, picklescan, fickling, garak**) and reported with its losses. None of it has outside users yet, and each repository states its [evidence level](#evidence-levels). Every README opens with an **In plain English** section: what the project is, its best results and where it falls short.
+The repositories below are that software: ML infrastructure, AI security scanners, ranking engines and agent services. My part is choosing the problem, choosing the well-known tool to beat, and insisting that every result be checked against that tool (**PyTorch, ONNX Runtime, SciPy, FAISS, hnswlib, LightGBM, XGBoost, scikit-learn, tiktoken, Semgrep, picklescan, fickling, garak**) and reported with its losses. None of it has outside users yet, and each repository states its [evidence level](#evidence-levels). Every README opens with a **Summary** section: what the project is, its best results and where it falls short.
 
 ---
 
