@@ -6,8 +6,6 @@
 
 </div>
 
-I build and evaluate AI systems, products & agents.
-
 ## Projects
 
 Each repository README gives the full method and results, including the limits.
