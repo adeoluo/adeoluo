@@ -55,16 +55,17 @@ Both articles below discuss my F5 Labs published research report and link to it.
   alarms. *Limit:* it has not found a previously unknown attack, and its lead is two files.
 - **[ml-graph-compiler](https://github.com/adeoluo/ml-graph-compiler)** turns a trained AI model into fast C code. Its predictions match
   ONNX Runtime, Microsoft's standard engine for running models, on all 3,925 test photos. With
-  8 processor cores it is 1.23 to 1.37 times faster on three of four models. *Limit:* ONNX
-  Runtime is faster with 1 or 4 cores, and all timings come from one laptop.
+  8 threads (parallel streams of work) it is 1.23 to 1.37 times faster on three of four models. *Limit:* ONNX
+  Runtime is faster with 1 or 4 threads, and all timings come from one laptop.
 - **[lambdamart-ranking-engine](https://github.com/adeoluo/lambdamart-ranking-engine)** learns to put the most relevant search results first.
   On Microsoft's public search dataset its ranking quality ties LightGBM, a widely used
   library for this task (0.5029 against 0.5042, not a statistically significant difference).
   *Limit:* LightGBM trains about 1.7 times as fast.
 - **[mcp-security-scanner](https://github.com/adeoluo/mcp-security-scanner)** finds security flaws in the tool servers that AI assistants
-  connect to. In 432 test servers it found every planted flaw of three common types, where the
-  code scanner Semgrep found 59%, 0% and 11%. *Limit:* the test servers were written by me, and
-  on real code some alert types were rarely correct (2 of 9 for one type).
+  connect to. In the 365 standard cases of a 432-case test set, it found every planted flaw of
+  three common types, where the code scanner Semgrep found 59%, 0% and 11%. *Limit:* I wrote
+  the test cases, it found 30% of the flaws in the harder cases, and on real code some alert
+  types were rarely correct (2 of 9 for one type).
 - **[prompt-optimizer](https://github.com/adeoluo/prompt-optimizer)** rewrites the instructions given to an AI model with seven
   published methods and measures which ones help. The best method raises a small model's score
   on grade-school math problems from 64.7% to 75.0%. *Limit:* each method was run once, and no
