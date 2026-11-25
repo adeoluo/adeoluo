@@ -15,14 +15,7 @@ Master of Data Science in progress (Focus: Artificial Intelligence and Machine L
 
 ---
 
-I build software in Python, Rust, Go and TypeScript by directing AI coding agents, and I
-publish threat research on bots and automated attacks on websites. My latest report was picked
-up by F5's North America Field Chief Information Security Officer (CISO) and covered by
-*Dark Reading*, a top-tier cybersecurity news publication.
-
-In each software project, I choose the problem and the established tool to compare against.
-Every result is checked against that tool and reported together with its losses. None of these
-projects has outside users yet.
+I build and evaluate systems.
 
 ## Published Threat Research
 
@@ -47,83 +40,47 @@ Both articles below discuss my F5 Labs published research report and link to it.
 | **Dark Reading** | [*Why Holiday Security Can't Wait for Black Friday*](https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday) | Alexander Culafi, Senior News Writer | Nov 19, 2026 |
 | **F5 Executive Blog** | [*The Black Friday automation trend everyone gets wrong*](https://www.f5.com/company/blog/the-black-friday-automation-trend-everyone-gets-wrong) | Sean Murphy, Field CISO (North America), F5 | Nov 19, 2026 |
 
-## Selected Projects
+## Projects
 
-- **[model-supply-chain-scanner](https://github.com/adeoluo/model-supply-chain-scanner)** checks AI model files for hidden code without opening
-  them. Four other scanner projects publish 181 test files. On these files it catches 141 of
-  the 144 dangerous ones with no false alarm; the next best tool catches 139, with 4 false
-  alarms. *Limit:* it has not found a previously unknown attack, and its lead is two files.
-- **[ml-graph-compiler](https://github.com/adeoluo/ml-graph-compiler)** turns a trained AI model into fast C code. Its predictions match
-  ONNX Runtime, Microsoft's standard engine for running models, on all 3,925 test photos. With
-  8 threads (parallel streams of work) it is 1.23 to 1.37 times faster on three of four models. *Limit:* ONNX
-  Runtime is faster with 1 or 4 threads, and all timings come from one laptop.
-- **[lambdamart-ranking-engine](https://github.com/adeoluo/lambdamart-ranking-engine)** learns to put the most relevant search results first.
-  On Microsoft's public search dataset its ranking quality ties LightGBM, a widely used
-  library for this task (0.5029 against 0.5042, not a statistically significant difference).
-  *Limit:* LightGBM trains about 1.7 times as fast.
-- **[mcp-security-scanner](https://github.com/adeoluo/mcp-security-scanner)** finds security flaws in the tool servers that AI assistants
-  connect to. In the 365 standard cases of a 432-case test set, it found every planted flaw of
-  three common types, where the code scanner Semgrep found 59%, 0% and 11%. *Limit:* I wrote
-  the test cases, it found 30% of the flaws in the harder cases, and on real code some alert
-  types were rarely correct (2 of 9 for one type).
-- **[prompt-optimizer](https://github.com/adeoluo/prompt-optimizer)** rewrites the instructions given to an AI model with seven
-  published methods and measures which ones help. The best method raises a small model's score
-  on grade-school math problems from 64.7% to 75.0%. *Limit:* each method was run once, and no
-  method helped on a set of hard reasoning tasks.
-- **[agent-platform](https://github.com/adeoluo/agent-platform)** runs AI agent jobs for many customers. When a worker is stopped in
-  the middle of a job, no finished step runs again. *Limit:* it was tested with a scripted
-  stand-in for the AI model, not with a live one.
+Each repository README gives the full method and results, including the limits.
 
-## All Repositories
+### AI Security
 
-Each README opens with **Highlights** (the best checked results and where the project falls
-short) and **Key terms** (plain definitions).
-
-| Repository | What it does | Evidence level |
+| Project | What it does | Result |
 | --- | --- | --- |
-| [model-supply-chain-scanner](https://github.com/adeoluo/model-supply-chain-scanner) | Checks AI model files for hidden code before they are opened. | Publicly benchmarked, partly on author-written tests |
-| [mcp-security-scanner](https://github.com/adeoluo/mcp-security-scanner) | Finds security flaws in the tool servers that AI assistants connect to. | Publicly benchmarked, partly on author-written tests |
-| [prompt-injection-detector](https://github.com/adeoluo/prompt-injection-detector) | Detects text written to take over an AI model's instructions. | Publicly benchmarked |
-| [llm-vuln-scanner](https://github.com/adeoluo/llm-vuln-scanner) | Tests language models with attack prompts and reports their weaknesses. | Reference validated |
-| [agent-sandbox](https://github.com/adeoluo/agent-sandbox) | Controls which commands an AI agent may run on a computer, and logs every decision. | Unit tested |
-| [bot-traffic-econometrics](https://github.com/adeoluo/bot-traffic-econometrics) | Statistical methods for measuring bot traffic, shown on made-up data. | Reference validated |
-| [ml-graph-compiler](https://github.com/adeoluo/ml-graph-compiler) | Turns a trained AI model into fast C code for one computer. | Publicly benchmarked |
-| [vectordb-go](https://github.com/adeoluo/vectordb-go) | A database server that stores number vectors and finds the most similar ones. | Publicly benchmarked |
-| [ann-vector-search-library](https://github.com/adeoluo/ann-vector-search-library) | A library that finds the most similar vectors quickly, usable from Python. | Publicly benchmarked |
-| [hybrid-rag](https://github.com/adeoluo/hybrid-rag) | Finds the right documents for an AI model to answer from, using keyword search. | Publicly benchmarked |
-| [lambdamart-ranking-engine](https://github.com/adeoluo/lambdamart-ranking-engine) | Learns to put the most relevant search results first. | Publicly benchmarked |
-| [ad-auction-lab](https://github.com/adeoluo/ad-auction-lab) | Simulates online ad auctions and tests bidding and click-prediction methods on public data. | Publicly benchmarked |
-| [corpus-dedup-library](https://github.com/adeoluo/corpus-dedup-library) | Removes near-duplicate documents from very large text collections. | Publicly benchmarked |
-| [bpe-tokenizer-library](https://github.com/adeoluo/bpe-tokenizer-library) | Splits text into the small pieces (tokens) that language models read. | Publicly benchmarked |
-| [prompt-optimizer](https://github.com/adeoluo/prompt-optimizer) | Rewrites instructions for AI models automatically and measures which methods help. | Publicly benchmarked |
-| [transformer-from-scratch](https://github.com/adeoluo/transformer-from-scratch) | A small teaching version of the model design behind modern language models. | Reference validated |
-| [rlhf-reward-model](https://github.com/adeoluo/rlhf-reward-model) | A controlled study of how AI models are trained on human preferences, on made-up data. | Unit tested |
-| [agent-platform](https://github.com/adeoluo/agent-platform) | A service that runs AI agent jobs for many customers and recovers from crashes. | Unit tested |
-| [llm-gateway](https://github.com/adeoluo/llm-gateway) | Sits between applications and AI model providers. It switches provider when one fails and limits use per customer. | Unit tested |
-| [evaluation-harness](https://github.com/adeoluo/evaluation-harness) | Statistics for checking whether one AI model is really better than another. | Reference validated |
-| [llm-observability](https://github.com/adeoluo/llm-observability) | Records each step of an AI application's work, with its time and cost. | Unit tested |
+| [model-supply-chain-scanner](https://github.com/adeoluo/model-supply-chain-scanner) | Finds hidden code in AI model files before they are opened. | Highest score of five scanners on the test files the other four publish: 141 of 144 dangerous files caught, with no false alarms. |
+| [mcp-security-scanner](https://github.com/adeoluo/mcp-security-scanner) | Finds security flaws in the tool servers that AI assistants connect to. | Found every planted flaw in 365 standard test cases, where the Semgrep code scanner found 0% to 59%. Run over 1,013 public repositories. |
+| [prompt-injection-detector](https://github.com/adeoluo/prompt-injection-detector) | Detects text written to take over an AI model's instructions. | Scores a prompt in 27 microseconds, 17 times faster than a scikit-learn model of the same accuracy. |
+| [llm-vuln-scanner](https://github.com/adeoluo/llm-vuln-scanner) | Attacks AI applications the way a real attacker would and reports what worked. | 540 attacks against each of five open models, compared with NVIDIA's garak scanner. |
+| [agent-sandbox](https://github.com/adeoluo/agent-sandbox) | Controls which commands an AI agent may run, and records every decision. | Blocked all 38 hostile test commands. Rejects a disallowed command in about 8 microseconds. |
+| [bot-traffic-econometrics](https://github.com/adeoluo/bot-traffic-econometrics) | Statistical methods for measuring bot traffic on websites. | Rust core 17 to 134 times faster than the Python version, with matching results. |
 
-## Evidence Levels
+### Machine Learning Systems
 
-Each repository states how strongly its results have been checked.
+| Project | What it does | Result |
+| --- | --- | --- |
+| [ml-graph-compiler](https://github.com/adeoluo/ml-graph-compiler) | Turns a trained AI model into fast C code for one computer. | Same predictions as Microsoft's ONNX Runtime on all 3,925 test photos, and up to 1.37 times faster with 8 threads (parallel streams of work). |
+| [transformer-from-scratch](https://github.com/adeoluo/transformer-from-scratch) | A small language model built from first principles in NumPy. | Its hand-written training math (all 48 sets of gradients) matches PyTorch to within 0.000000001. |
+| [rlhf-reward-model](https://github.com/adeoluo/rlhf-reward-model) | A controlled study of training AI models on human preferences. | Training closed 96.6% of the gap to the best possible behaviour. |
+| [prompt-optimizer](https://github.com/adeoluo/prompt-optimizer) | Rewrites the instructions given to AI models with seven published methods. | Raised a small model from 64.7% to 75.0% correct on grade-school math problems. |
 
-| Level | Meaning |
-| --- | --- |
-| **Unit tested** | The behaviour is covered by tests I wrote. |
-| **Reference validated** | The outputs match an established tool on small or made-up inputs. |
-| **Publicly benchmarked** | Measured on public data or against established tools, with the raw results published. |
-| **Independently reproduced** | Someone else has rerun the results. No repository has reached this level yet. |
-| **Production observed** | Running for real users. No repository has reached this level yet. |
+### Search, Data and Ranking
 
-I ran every benchmark myself, on one laptop.
+| Project | What it does | Result |
+| --- | --- | --- |
+| [lambdamart-ranking-engine](https://github.com/adeoluo/lambdamart-ranking-engine) | Learns to put the most relevant search results first. | Ties LightGBM, a widely used library, on Microsoft's public search dataset, and has the top score of three libraries on a second dataset. |
+| [vectordb-go](https://github.com/adeoluo/vectordb-go) | A database server that finds the most similar items among millions of vectors (lists of numbers that represent text or images). | Answers 1.3 to 2.0 times as many queries per second as the hnswlib library on one million vectors, at nearly the same accuracy, on an Apple M1 laptop. |
+| [ann-vector-search-library](https://github.com/adeoluo/ann-vector-search-library) | A library that finds the most similar items quickly, usable from Python. | Same accuracy as hnswlib, a widely used C++ library, on 10,000 vectors. |
+| [hybrid-rag](https://github.com/adeoluo/hybrid-rag) | Finds the right documents for an AI model to answer from. | Beats the published search baseline on SciFact, a science-question benchmark (0.687 against 0.665), and runs about 70 times faster than the rank_bm25 Python library. |
+| [ad-auction-lab](https://github.com/adeoluo/ad-auction-lab) | Online ad auctions, bidding, budget pacing and click prediction. | Its click model slightly beats the same model built in PyTorch, trained on 9.17 million real ad logs. |
+| [corpus-dedup-library](https://github.com/adeoluo/corpus-dedup-library) | Removes near-duplicate documents from very large text collections. | Deduplicated 1.4 million web pages in 30.5 seconds on one laptop. |
+| [bpe-tokenizer-library](https://github.com/adeoluo/bpe-tokenizer-library) | Splits text into the pieces (tokens) that language models read. | Encodes batches faster than OpenAI's tiktoken (68.5 against 52.4 MB per second). |
 
-<details>
-<summary><b>How the 21 repositories fit together</b></summary>
+### AI Applications and Infrastructure
 
-<br/>
-
-<p align="center">
-  <img src="assets/portfolio-architecture.svg" alt="How the 21 repositories fit together" width="100%">
-</p>
-
-</details>
+| Project | What it does | Result |
+| --- | --- | --- |
+| [agent-platform](https://github.com/adeoluo/agent-platform) | Runs AI agent jobs for many customers, with each customer's data kept separate. | 554 requests per second with no errors. A job whose worker is killed resumes without repeating a finished step. |
+| [llm-gateway](https://github.com/adeoluo/llm-gateway) | Sits between applications and AI model providers, and switches provider when one fails. | 2,000 of 2,000 requests succeeded while the main provider was failing. |
+| [evaluation-harness](https://github.com/adeoluo/evaluation-harness) | Statistics for deciding whether one AI model is really better than another. | Agrees with SciPy to about 16 decimal places. |
+| [llm-observability](https://github.com/adeoluo/llm-observability) | Records each step of an AI application's work, with its time and cost. | Records about 194,000 steps per second. |
