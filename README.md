@@ -4,41 +4,9 @@
 
 **AI Systems, Security and Machine Learning Engineer Who Directs Multi-Agent Workflows**
 
-Bachelor of Computer Science with Distinction (Certificate of Specialization in Data Science), **Dalhousie University**<br/>
-Master of Data Science in progress (Focus: Artificial Intelligence and Machine Learning), **Johns Hopkins University**
-
-[**LinkedIn**](https://www.linkedin.com/in/adeolu-ogunnoiki) · [**F5 Labs Author Profile**](https://www.f5.com/labs/authors/adeolu-ogunnoiki)
-
-`Python` · `Rust` · `Go` · `TypeScript`
-
 </div>
 
----
-
-I build and evaluate systems.
-
-## Published Threat Research
-
-All published by [F5 Labs](https://www.f5.com/labs/authors/adeolu-ogunnoiki).
-
-| Date | Publication | My role |
-| --- | --- | --- |
-| Nov 2026 | [*Automation leading up to Black Friday*](https://www.f5.com/labs/articles/2026-black-friday-bot-report) ([PDF](https://cdn.sanity.io/files/k6fem79d/translations-production/1d1028afb94e20d907a0b98ef084535e84fc9cd5.pdf)) | Sole author |
-| Nov 2024 | [*Black Friday Versus The Bots*](https://www.f5.com/labs/articles/black-friday-versus-the-bots) | Co-author (first of four listed) |
-| Nov 2023 | [*Bots Target Retailers for Black Friday Bargains*](https://www.f5.com/labs/articles/bots-target-retailers-for-black-friday-bargains) | Co-author (first of two listed) |
-| Nov 2023 | [*2023 Identity Threat Report: The Unpatchables*](https://www.f5.com/labs/articles/2023-identity-threat-report-the-unpatchables) | Co-author (nine listed) |
-| Nov 2023 | [*2023 Identity Threat Report: Executive Summary*](https://www.f5.com/labs/articles/2023-identity-threat-report-executive-summary) | Co-author (nine listed) |
-
-The 2026 report studies three Black Friday seasons of retail web traffic. It shows that the
-reported rise in automated traffic, from `17.4%` to `28.6%` of transactions between 2023 and
-2025, mixes real change with a change in which retailers were measured.
-
-Both articles below discuss my F5 Labs published research report and link to it.
-
-| Outlet | Article | Author | Date |
-| --- | --- | --- | --- |
-| **Dark Reading** | [*Why Holiday Security Can't Wait for Black Friday*](https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday) | Alexander Culafi, Senior News Writer | Nov 19, 2026 |
-| **F5 Executive Blog** | [*The Black Friday automation trend everyone gets wrong*](https://www.f5.com/company/blog/the-black-friday-automation-trend-everyone-gets-wrong) | Sean Murphy, Field CISO (North America), F5 | Nov 19, 2026 |
+I build and evaluate AI systems, products & agents.
 
 ## Projects
 
